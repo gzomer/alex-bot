@@ -1,0 +1,17 @@
+.message-list-container {
+  top: 88px!important;
+  padding-bottom: 70px!important;
+}
+
+.message-list {
+	padding-bottom: 40px;
+}
+
+.application--wrap > nav {
+  padding-top: 40px;
+}
+
+.application--wrap footer nav{
+	padding-bottom: 15px;
+	padding-top: 6px;
+}
