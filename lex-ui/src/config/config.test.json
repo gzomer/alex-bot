@@ -1,0 +1,19 @@
+{
+  "cognito": {
+    "poolId": ""
+  },
+  "lex": {
+    "botName": "Alex",
+    "initialText": "",
+    "initialSpeechInstruction": ""
+  },
+  "polly": {
+    "voiceId": "Salli"
+  },
+  "ui": {
+    "parentOrigin": "http://localhost:8080"    
+  },
+  "recorder": {
+    "preset": "speech_recognition"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cognito": {
+    "poolId": "YOUR_COGNITO_POOL_ID"
+  },
+  "lex": {
+    "botName": "Alex",
+    "initialText": "",
+    "initialSpeechInstruction": ""
+  },
+  "polly": {
+    "voiceId": "Matthew"
+  },
+  "ui": {
+    "parentOrigin": "http://localhost:8080",
+    "pageTitle": "Alex",
+    "toolbarTitle": "Alex",
+    "enableLogin": false,
+    "pushInitialTextOnRestart": false,
+    "shouldDisplayResponseCardTitle": false,
+    "showErrorIcon": true,
+    "showDialogStateIcon": false,
+    "positiveFeedbackIntent": "Thumbs up",
+    "negativeFeedbackIntent": "Thumbs down",
+    "helpIntent": "help",
+    "hideInputFieldsForButtonResponse": true
+  },
+  "recorder": {
+    "preset": "speech_recognition"
+  },
+  "iframe": {
+    "shouldLoadIframeMinimized": false
+  }
+}

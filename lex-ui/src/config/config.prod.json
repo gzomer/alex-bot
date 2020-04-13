@@ -1,0 +1,25 @@
+{
+  "region": "us-east-1",
+  "cognito": {
+    "poolId": "YOUR_COGNITO_POOL_ID",
+    "aws_cognito_region": "us-east-1",
+    "region": "us-east-1"
+  },
+  "lex": {
+    "botName": "Alex",
+    "initialText": "",
+    "initialSpeechInstruction": ""
+  },
+  "polly": {
+    "voiceId": "Matthew"
+  },
+  "ui": {
+    "parentOrigin": "",
+    "pageTitle": "Alex",
+    "toolbarTitle": "Alex",
+    "pushInitialTextOnRestart": false
+  },
+  "recorder": {
+    "preset": "speech_recognition"
+  }
+}
