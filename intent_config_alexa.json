@@ -1,0 +1,236 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "alex bot",
+            "intents": [
+                {
+                    "name": "OpenTicket",
+                    "slots": [
+                        {
+                            "name": "Description",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "Summary",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "to open ticket because {Description} ",
+                        "open a ticket because {Description} ",
+                        "open ticket because {Description} "
+                    ]
+                },
+                {
+                    "name": "StatusExpense",
+                    "slots": [],
+                    "samples": [
+                        "what is the status of my expenses"
+                    ]
+                },
+                {
+                    "name": "AskQuestion",
+                    "slots": [
+                        {
+                            "name": "Description",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "How  {Description}",
+                        "What is {Description}",
+                        "Why is {Description}",
+                        "How can I {Description} ",
+                        "Can I ask a question",
+                        "Can you find a document for me"
+                    ]
+                },
+                {
+                    "name": "AddTask",
+                    "slots": [
+                        {
+                            "name": "Extra",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "Title",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "add a task {Title}",
+                        "can you add a task {Title}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Hello",
+                    "slots": [],
+                    "samples": [
+                        "Hi there",
+                        "Hello"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "OpenTicket",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Description",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-OpenTicket.IntentSlot-Description"
+                            }
+                        },
+                        {
+                            "name": "Summary",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-OpenTicket.IntentSlot-Summary"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "StatusExpense",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                },
+                {
+                    "name": "AskQuestion",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Description",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-AskQuestion.IntentSlot-Description"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AddTask",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Extra",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-AddTask.IntentSlot-Extra"
+                            }
+                        },
+                        {
+                            "name": "Title",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-AddTask.IntentSlot-Title"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "SKILL_RESPONSE"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Intent-OpenTicket.IntentSlot-Description",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is your problem about?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-OpenTicket.IntentSlot-Summary",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Was this helpful?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-AskQuestion.IntentSlot-Description",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sure, what do you need?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-TrackExpense.IntentSlot-Location",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the location?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-TrackExpense.IntentSlot-Price",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the expense amount?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-TrackExpense.IntentSlot-Store",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the name of the Store?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-AddTask.IntentSlot-Extra",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Great, anything else?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-AddTask.IntentSlot-Title",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the title of the task?"
+                    }
+                ]
+            }
+        ]
+    }
+}
