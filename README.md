@@ -96,9 +96,9 @@ Click below 👇 to see the demo 😎
 | Send passport|  [data-input/Passport.jpg](https://github.com/gzomer/alex-bot/blob/master/data-input/Passport.jpg) | ```{'ExpirationDate': '17/01/1985','BirthDate': '31/01/2016','PassportNumber': '107185703'}``` |
 | Add task|  [data-input/wireframe.jpg](https://github.com/gzomer/alex-bot/blob/master/data-input/wireframe.jpg) | [data-output/wireframe.html](data-output/wireframe.html) |
 | Add expense|  [data-input/expense.jpg](https://github.com/gzomer/alex-bot/blob/master/data-input/expense.jpg) | ```{'Price': '13.54', 'Location': 'Guildford', 'Store': 'Co-op'}``` |
-| Open ticket| ```{'query':'My internet is not working'}``` and [this file](https://github.com/gzomer/alex-bot/blob/master/data-input/How to Troubleshoot Home WiFi and Router Issues _ Guides.pdf) | ```{'Summary': 'Wait 2-5 minutes before plugging it back in.\n\n\n3. Wait 5 more minutes and retry the connection.\n\n\nIn most cases, this should x your issue and allow you to get back online. If you go through\nthese steps and something still isnt working, you may need to contact your internet\nservice provider for assistance.\n\n\nUnderstanding Your Routers Icons\n\n\nMost routers have a series of icons that illuminate to convey dierent status messages at a\nglance. Though these can vary from brand to brand, most manufacturers include at least\nthree primary status indicators:\n\n\nWiFi not working\n\n\nWiFi slowed down\n\n\nWiFi network disappearing\n\n\nDevices that wont connect to Wi\n\n\nGlobe icon: solid when modem is connected to the Internet.'}```|
+| Open ticket| ```{'query':'My internet is not working'}``` and [this file](https://github.com/gzomer/alex-bot/blob/master/data-input/How%20to%20Troubleshoot%20Home%20WiFi%20and%20Router%20Issues%20_%20Guides.pdf) | ```{'Summary': 'Wait 2-5 minutes before plugging it back in.\n\n\n3. Wait 5 more minutes and retry the connection.\n\n\nIn most cases, this should x your issue and allow you to get back online. If you go through\nthese steps and something still isnt working, you may need to contact your internet\nservice provider for assistance.\n\n\nUnderstanding Your Routers Icons\n\n\nMost routers have a series of icons that illuminate to convey dierent status messages at a\nglance. Though these can vary from brand to brand, most manufacturers include at least\nthree primary status indicators:\n\n\nWiFi not working\n\n\nWiFi slowed down\n\n\nWiFi network disappearing\n\n\nDevices that wont connect to Wi\n\n\nGlobe icon: solid when modem is connected to the Internet.'}```|
 | Find document| ```{'Description': 'Privacy policy'}``` and [this file](https://github.com/gzomer/alex-bot/blob/master/data-input/AmazonPrivacyPolicy.html)| ```{'Summary': 'We collect your personal information in order to provide and continually improve our products and services. What personal information about customers does amazon europe collect ?provide , troubleshoot , and improve amazon services.'}```|
-| Ask question | ```{'Description': 'How many vacation weeks I have on my first year?'}``` and [this file](https://github.com/gzomer/alex-bot/blob/master/data-input/Paid Time Off for U.S. Amazon Employees_ _ Amazon.jobs.pdf) | ```{'Summary': "Amazon.\ncom's salaried employees earn two weeks of vacation time in their first year of employment and three weeks of vacation in their\nsecond year"}``` |
+| Ask question | ```{'Description': 'How many vacation weeks I have on my first year?'}``` and [this file](https://github.com/gzomer/alex-bot/blob/master/data-input/Paid%20Time%20Off%20for%20U.S.%20Amazon%20Employees_%20_%20Amazon.jobs.pdf) | ```{'Summary': "Amazon.\ncom's salaried employees earn two weeks of vacation time in their first year of employment and three weeks of vacation in their\nsecond year"}``` |
 
 # Testing
 
@@ -109,11 +109,11 @@ You can test only the [Models](#models), test the [Use-cases](#use-cases) and te
 
 ### Models
 
-If you just want just wand to test the deployment of the curated models and perform inference, follow the instructions at [this Jupyter notebook](https://github.com/gzomer/alex-bot/blob/master/Deploy Models and Perform Inference.ipynb).
+If you just want just wand to test the deployment of the curated models and perform inference, follow the instructions at [this Jupyter notebook](https://github.com/gzomer/alex-bot/blob/master/Deploy%20Models%20and%20Perform%20Inference.ipynb).
 
 ### Use-cases
 
-Now, if you want to test the use-cases, i.e. test the models integrated with the business logic and AWS services, use this [this Jupyter notebook](https://github.com/gzomer/alex-bot/blob/master/Features Testing.ipynb).
+Now, if you want to test the use-cases, i.e. test the models integrated with the business logic and AWS services, use this [this Jupyter notebook](https://github.com/gzomer/alex-bot/blob/master/Features%20Testing.ipynb).
 
 Please note that for this you will need to have deployed the models, and depending on the feature you want to test, you may need to configure S3 Buckets, Kendra index, and get a Trello API key/token.
 
