@@ -5,7 +5,7 @@ Alex is a chat bot that helps you at work, saving your time and boosting your pr
 
 He can help you to ask for expenses refunds, add tasks, create tickets, find documents and answer questions.
 
-One more thing: Alex is friend of Alexa 😬.
+One more thing: Alex is a friend of Alexa 😬.
 
 Click below 👇 to see the demo 😎
 
@@ -157,7 +157,7 @@ Skip if you have already deployed the models with the Jupyter Notebook.
 
 ### Amazon Kendra
 
-I'm not going to explain in details how to deploy a **Kendra** index because AWS docs does a good job on this.
+I'm not going to explain in detail how to deploy a **Kendra** index because AWS docs do a good job on this.
 
 You need to follow two steps:
 
@@ -182,7 +182,7 @@ You will need to create seven functions, namely:
 6. [send_passport](https://github.com/gzomer/alex-bot/blob/master/lambda_send_passport.py)
 7. [upload_file](https://github.com/gzomer/alex-bot/blob/master/lambda_upload_file.py)
 
-Click on the links above to copy the source code for the Lambda function and paste at the Lambda configuration. All of them use Python 3.6 engine. 
+Click on the links above to copy the source code for the Lambda function and paste it at the Lambda configuration. All of them use Python 3.6 engine. 
 
 **Important** You will need to configure the timeout for at least 60 seconds, or otherwise the functions will fail. This is because some of the models are slow to perform inference.
 
@@ -198,7 +198,7 @@ Click on the links above to copy the source code for the Lambda function and pas
 
 #### Creating Lambda
 
-We need to create a Lambda to handle the requests from Alexa. For this we are going to use the starting application from AWS Serverless repository because it already creates the necessary Alexa Skill trigger for us, and we just need to update the Lambda code.
+We need to create a Lambda to handle the requests from Alexa. For this, we are going to use the starting application from AWS Serverless repository because it already creates the necessary Alexa Skill trigger for us, and we just need to update the Lambda code.
 
 1. Go to the same page that you used to create a Lambda function
 2. Choose Browse serverless app repository
@@ -229,7 +229,7 @@ Go to [this link](https://console.aws.amazon.com/iam/home?#/policies) to create 
 
 #### Adding policies to Lambda's roles
 
-Now we need to attach a number of policies to each Lambda role. You can find attach politices to roles at this [link](https://console.aws.amazon.com/iam/home?#/roles).
+Now we need to attach a number of policies to each Lambda role. You can find attach policies to roles at this [link](https://console.aws.amazon.com/iam/home?#/roles).
 
 1. alex_flow
 	* InvokeLambda 
@@ -261,7 +261,7 @@ There are two projects for the mobile app, the cordova wrapper and the Lex Bot U
 
 #### Lex bot UI
 
-First, you need create a Cognito pool ID and add the Lex policy.
+First, you need to create a Cognito pool ID and add the Lex policy.
 
 Next, open those three files:
 
@@ -271,7 +271,7 @@ Next, open those three files:
 
 And replace `{YOUR_API_GATEWAY_TO_UPLOAD_FILE_LAMBDA}` for `https://{YOU_ENDPOINT}.execute-api.us-east-1.amazonaws.com/Production/upload_file`
 
-Also replace `YOUR_COGNITO_POOL_ID` with the Cognito pool ID you have created above.
+Also, replace `YOUR_COGNITO_POOL_ID` with the Cognito pool ID you have created above.
 
 1. `npm install`
 2. `npm run build`
