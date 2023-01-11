@@ -20,7 +20,7 @@
     "aws-amplify": "^3.0.6",
     "aws-sdk": "^2.332.0",
     "axios": "^0.19.2",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "marked": "^0.7.0",
     "material-design-icons": "^3.0.1",
     "roboto-fontface": "^0.8.0",
